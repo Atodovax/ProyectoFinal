@@ -306,15 +306,60 @@ main nav ul li a:active {
 /* Estilos de Main Shop */
 
 .contenedorCards {
-    display: flex;
-    justify-content: center;
-    gap: 6vh;
-    flex-wrap: wrap;
-    margin-top: 5vh;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 8vw;
+   margin-top: 3vh;
+    
 }
 
-.card-img-top {
-    width: 18rem;
+.cardImg {
+    width: 25vw;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardDos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardTres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardCuatro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardCinco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardSeis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn {
@@ -330,7 +375,7 @@ main nav ul li a:active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1vh;
+    gap: 3vh;
 }
 
 /* Estilos de Footer Shop */
