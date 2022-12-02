@@ -1,0 +1,29 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@import "utilidades/mixin";
+@import "utilidades/variables";
+@import "utilidades/condicionales";
+@import "utilidades/extend";
+
+/* import htmls */
+
+@import "html/index";
+@import "html/artesvisuales";
+@import "html/shop";
+@import "html/Fotografia";
+@import "html/contacto";
+
+
+

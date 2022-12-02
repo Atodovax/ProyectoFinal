@@ -1,0 +1,12 @@
+%estilosBack{
+    font-weight: bolder;
+    color: black;
+}
+
+section{
+    @extend %estilosBack;
+}
+
+.section-dos{
+    @extend %estilosBack;
+}

@@ -1,0 +1,239 @@
+/* Estilos de Grid Artes Visuales */
+
+.contenedorArtes {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 30vw 40vw 30vw;
+    grid-template-rows: 10vh 75vh 10vh 5vh;
+    grid-template-areas: 
+        "header header header"
+        "flechaizq main flechader"
+        "sectionizq section sectionder"
+        "footer footer footer";
+
+/*Estilos de Header de Artes Visuales */
+
+    .tituloArtes{
+        grid-area: header;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2vh;    
+    }
+/* Estilos de main Artes Visuales */
+    
+    .mainArtes {
+        grid-area: main;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .fotoUno {
+            max-width: 35vw;
+        }        
+    }
+    
+/* Estilos de Section Izq */ 
+
+    .sectionIzq {
+        grid-area: flechaizq;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+        .flechaAnterior {
+            width: 30px;
+        }
+    }
+
+/* Estilos de Section Artes */
+
+    .sectionArtes {
+        grid-area: section;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .secretArt {
+            text-align: left;
+        }
+        
+        .secretArtdos {
+            text-align: left;
+            font-size: small;
+        }
+        
+    }
+
+/* Estilos de Section derecha Artes */
+
+    .sectionDer {
+        grid-area: flechader;
+        display: grid;
+        align-items: center;
+        justify-content: flex-start;
+
+        .flechaSiguiente {
+            width: 30px;
+        }    
+    }
+
+/* Estilos de footer Artes Visuales */
+
+.footerArtes {
+    grid-area: footer;
+    text-align: start;
+    margin-left: 3vw;
+
+    .footerBack {
+        transition: 300ms;
+        &:hover{
+            font-size: 102%;
+            transition: 300ms;
+        }
+        &:active{
+            color: inherit;
+        }
+        &:link{
+            color: inherit;
+        }
+        &:visited{
+            color: inherit;
+        }
+    }
+    .footerMobile {
+        display: none;
+    }   
+}
+
+}
+
+/* Media Query Tablet */
+
+@media (max-width: 767px) {
+    
+    .contenedorArtes {
+        height: 100vh;
+        background-color: $color-tablet;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 20vh 55vh 20vh 5vh;
+        grid-template-areas: 
+            "header"
+            "main"
+            "section"
+            "footer";
+
+            .tituloArtes {
+                grid-area: header;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2vh;
+            }
+            .mainArtes {
+                grid-area: main;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .fotoUno {
+                    max-width: 70vw;
+                }
+            
+            }
+            .sectionIzq {
+                grid-area: flechaizq;
+                display: none;
+            }
+            .sectionArtes {
+                grid-area: section;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .sectionDer {
+                grid-area: flechader;
+                display: none;
+            }
+            .footerArtes {
+                display: flex;
+                align-items: center;
+                grid-area: footer;
+                margin-left: 5vw;
+                margin-right: 5vw;
+                margin-bottom: 2vh;
+                justify-content:space-between;
+                .footerMobile {
+                    display: block;
+                }  
+            }          
+    }
+}
+
+/* Media Query Smartphone */
+
+@media (max-width: 480px) {
+
+    .contenedorArtes {
+        height: 100vh;
+        background-color: $color-smartphone;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 20vh 55vh 20vh 5vh;
+        grid-template-areas: 
+            "header"
+            "main"
+            "section"
+            "footer";
+
+            .tituloArtes {
+                grid-area: header;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2vh;
+            }
+            .mainArtes {
+                grid-area: main;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .fotoUno {
+                    max-width: 70vw;
+                }
+            
+            }
+            .sectionIzq {
+                grid-area: flechaizq;
+                display: none;
+            }
+            .sectionArtes {
+                grid-area: section;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .sectionDer {
+                grid-area: flechader;
+                display: none;
+            }
+            .footerArtes {
+                display: flex;
+                align-items: center;
+                grid-area: footer;
+                margin-left: 5vw;
+                margin-right: 5vw;
+                margin-bottom: 2vh;
+                justify-content:space-between;
+                
+                .footerMobile {
+                    display: block;
+                }  
+            }          
+    }
+}
+
+
+
