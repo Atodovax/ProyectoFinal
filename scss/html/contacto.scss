@@ -1,0 +1,43 @@
+body{
+    min-height: 100vh;
+    .mb-4{
+        margin-left: 2vh;
+        margin-right: 2vh;
+        min-height: 86vh;
+    }
+
+    .footerContacto{
+        display: flex;
+        margin-left: 3vw;
+            .mobileContacto{
+                display: none;
+                font-size: $mobile-size;
+            }
+            .footerBack{
+                @extend .footerBack;
+            }
+    }
+}
+/* Media Query Contacto Tablet */
+
+@media (max-width: 767px) {
+    body{
+        background-color: $color-tablet;
+    }
+}
+
+/* Media Query Smartphone */
+
+@media (max-width: 480px) {
+    body{
+        background-color: $color-smartphone;
+        .footerContacto{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 2vh;
+            .mobileContacto{
+                display: block;
+            }
+        }
+    }
+}

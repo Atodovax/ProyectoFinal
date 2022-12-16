@@ -1,71 +1,19 @@
-.contenedorFotografia {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 10vh 80vh 10vh;
-    grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-
-        .headerFotografia {
-            grid-area: header;
-
-            .tituloFotografia {
-                text-align: center;
-                margin-top: 2vh;
-            }
-            
-        }
-
-        .mainFotografia {
-            grid-area: main;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            .fotosFotografia {
-                display: flex;
-                justify-content: center;
-                gap: 5vw;
-                .card{
-
-                    .card-img-top {
-                        width: 35vw;
-                    }
-                
-                       
-                }
-                .cardDos{
-                    
-                    .card-img-top {
-                        width: 35vw;
-                    }
-                
-                       
-                }
-            }
-            
-        }
-
-        .footerFotografia {
-            grid-area: footer;
-            display: flex;
-            align-items: center;
-
-            .backFotografia {
-                text-align: left;
-                margin-left: 3vw;
-                text-decoration: none;
-                font-weight: bolder;
-            }
-            
-        }
-         
+.headerFotografia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
+.footerFotografia{
+    text-align: start;
+    margin-left: 3vw;
 
-
-/* Media Query Tablet */
+        .footerMobile{
+            display: none;
+            font-size: $mobile-size;
+        }
+}
 
 @media (max-width: 767px) {
     body{
@@ -73,84 +21,32 @@
     }
 }
 
-/* Media Query Smartphone */
-
 @media (max-width: 480px) {
 
-    .contenedorFotografia {
-        height: 100vh;
-        background-color: $color-smartphone;
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 10vh 80vh 10vh;
-        grid-template-areas: 
-            "header"
-            "main"
-            "footer";
-    
-            .headerFotografia {
-                grid-area: header;
-    
-                .tituloFotografia {
-                    text-align: center;
-                    margin-top: 2vh;
-                }
-                
-            }
-    
-            .mainFotografia {
-                grid-area: main;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-    
-                .fotosFotografia {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 5vw;
-                    .card{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        text-align: center;
-                        gap: 3vh;
-                        .card-img-top {
-                            width: 35vw;
-                        }
-                    }
-                    .cardDos{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 3vh;
-                        .card-img-top {
-                            width: 35vw;
-                        }
-                    }    
-                           
-                    }
-                }
-                
-            }
-    
-            .footerFotografia {
-                grid-area: footer;
-                display: flex;
-                align-items: center;
-    
-                .backFotografia {
-                    text-align: left;
-                    margin-left: 3vw;
-                    text-decoration: none;
-                    @include estilosBack;
+body{
 
-                }
-                
-            }
-             
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .headerFotografia{
+        margin-bottom: 18vh;
     }
+
+    .footerFotografia{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: auto;
+        margin-left: 5vw;
+        margin-right: 5vw;
     
+        .footerMobile{
+                display: block;
+            }
+    }
+}
+
+
+
+}

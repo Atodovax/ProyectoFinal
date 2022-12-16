@@ -8,16 +8,33 @@
 body {
   font-family: 'Montserrat', sans-serif; }
 
+.footerBack, .contenedorArtes .footerArtes .footerBack, .contenedorShop .footerShop .shopBack, body .footerContacto .footerBack {
+  font-weight: bolder;
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+  transition: 300ms; }
+  .footerBack:hover, .contenedorArtes .footerArtes .footerBack:hover, .contenedorShop .footerShop .shopBack:hover, body .footerContacto .footerBack:hover {
+    font-size: 102%;
+    transition: 300ms; }
+  .footerBack:active, .contenedorArtes .footerArtes .footerBack:active, .contenedorShop .footerShop .shopBack:active, body .footerContacto .footerBack:active {
+    color: inherit; }
+  .footerBack:link, .contenedorArtes .footerArtes .footerBack:link, .contenedorShop .footerShop .shopBack:link, body .footerContacto .footerBack:link {
+    color: inherit; }
+  .footerBack:visited, .contenedorArtes .footerArtes .footerBack:visited, .contenedorShop .footerShop .shopBack:visited, body .footerContacto .footerBack:visited {
+    color: inherit; }
+
 /* import htmls */
 /* estilos de Grid index */
 .contenedorIndex {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 60vh 30vh 10vh;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas: "header"
+ "main"
+ "footer";
   /* Estilos de Header Index */
-  /* Estilos de Main Index */
-  /* Estilos de Footer index */ }
+ }
   .contenedorIndex .headerPrincipal {
     background-color: black; }
     .contenedorIndex .headerPrincipal .contenedorLogo {
@@ -27,6 +44,9 @@ body {
       .contenedorIndex .headerPrincipal .contenedorLogo .logoPrincipal {
         height: 50vh;
         margin-top: 5vh; }
+
+  /* Estilos de Main Index */
+
   .contenedorIndex main nav ul {
     grid-area: main;
     display: flex;
@@ -49,6 +69,9 @@ body {
           color: inherit; }
         .contenedorIndex main nav ul li a:link {
           color: inherit; }
+
+ /* Estilos de Footer index */
+
   .contenedorIndex .footerPrincipal {
     grid-area: footer;
     display: flex;
@@ -85,19 +108,21 @@ body {
   display: grid;
   grid-template-columns: 30vw 40vw 30vw;
   grid-template-rows: 10vh 75vh 10vh 5vh;
-  grid-template-areas: "header header header" "flechaizq main flechader" "sectionizq section sectionder" "footer footer footer";
+  grid-template-areas: "header header header"
+ "flechaizq main flechader"
+ "sectionizq section sectionder"
+ "footer footer footer";
   /*Estilos de Header de Artes Visuales */
-  /* Estilos de main Artes Visuales */
-  /* Estilos de Section Izq */
-  /* Estilos de Section Artes */
-  /* Estilos de Section derecha Artes */
-  /* Estilos de footer Artes Visuales */ }
+ }
   .contenedorArtes .tituloArtes {
     grid-area: header;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2vh; }
+
+  /* Estilos de main Artes Visuales */
+
   .contenedorArtes .mainArtes {
     grid-area: main;
     display: flex;
@@ -105,6 +130,9 @@ body {
     align-items: center; }
     .contenedorArtes .mainArtes .fotoUno {
       max-width: 35vw; }
+
+  /* Estilos de Section Izq */
+
   .contenedorArtes .sectionIzq {
     grid-area: flechaizq;
     display: flex;
@@ -112,6 +140,9 @@ body {
     justify-content: end; }
     .contenedorArtes .sectionIzq .flechaAnterior {
       width: 30px; }
+
+  /* Estilos de Section Artes */  
+
   .contenedorArtes .sectionArtes {
     grid-area: section;
     display: flex;
@@ -122,6 +153,9 @@ body {
     .contenedorArtes .sectionArtes .secretArtdos {
       text-align: left;
       font-size: small; }
+
+  /* Estilos de Section derecha Artes */
+
   .contenedorArtes .sectionDer {
     grid-area: flechader;
     display: grid;
@@ -129,21 +163,13 @@ body {
     justify-content: flex-start; }
     .contenedorArtes .sectionDer .flechaSiguiente {
       width: 30px; }
+
+  /* Estilos de footer Artes Visuales */ 
+
   .contenedorArtes .footerArtes {
     grid-area: footer;
     text-align: start;
     margin-left: 3vw; }
-    .contenedorArtes .footerArtes .footerBack {
-      transition: 300ms; }
-      .contenedorArtes .footerArtes .footerBack:hover {
-        font-size: 102%;
-        transition: 300ms; }
-      .contenedorArtes .footerArtes .footerBack:active {
-        color: inherit; }
-      .contenedorArtes .footerArtes .footerBack:link {
-        color: inherit; }
-      .contenedorArtes .footerArtes .footerBack:visited {
-        color: inherit; }
     .contenedorArtes .footerArtes .footerMobile {
       display: none; }
 
@@ -155,7 +181,10 @@ body {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 20vh 55vh 20vh 5vh;
-    grid-template-areas: "header" "main" "section" "footer"; }
+    grid-template-areas: "header"
+ "main"
+ "section"
+ "footer"; }
     .contenedorArtes .tituloArtes {
       grid-area: header;
       display: flex;
@@ -199,7 +228,10 @@ body {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 20vh 55vh 20vh 5vh;
-    grid-template-areas: "header" "main" "section" "footer"; }
+    grid-template-areas: "header"
+ "main"
+ "section"
+ "footer"; }
     .contenedorArtes .tituloArtes {
       grid-area: header;
       display: flex;
@@ -233,98 +265,95 @@ body {
       margin-bottom: 2vh;
       justify-content: space-between; }
       .contenedorArtes .footerArtes .footerMobile {
-        display: block; } }
+        display: block;
+        font-size: 12px; } }
 
 /* Estilos de Header Shop */
-.contenedorShop {
-  /* Estilos de Main Shop */
-  /* Estilos de Section Shop */
-  /* Estilos de Footer Shop */ }
-  .contenedorShop .headerShop {
+.contenedorShop .headerShop {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+  font-size: 2vh; }
+
+/* Estilos de Main Shop trabajado con codigo de Bootstrap pero sin linkear el CSS de Bootstrap
+ni tampoco los JAVASCRIPT. Solo usé el código para una base y fuí modificándolo en CSS  */
+
+.contenedorShop .contenedorCards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8vw;
+  margin-top: 3vh; }
+  .contenedorShop .contenedorCards div .card-body {
     display: flex;
-    justify-content: center;
-    margin-top: 2vh;
-    font-size: 2vh; }
-  .contenedorShop .contenedorCards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    gap: 8vw;
-    margin-top: 3vh; }
-    .contenedorShop .contenedorCards div .card-body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 3vh; }
-      .contenedorShop .contenedorCards div .card-body .btn {
-        text-decoration: none;
-        font-weight: bold; }
-      .contenedorShop .contenedorCards div .card-body .card-text {
-        font-weight: bold; }
-    .contenedorShop .contenedorCards .card {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      .contenedorShop .contenedorCards .card .cardImg {
-        width: 25vw; }
-    .contenedorShop .contenedorCards .cardDos {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      .contenedorShop .contenedorCards .cardDos .cardImg {
-        width: 25vw; }
-    .contenedorShop .contenedorCards .cardTres {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      .contenedorShop .contenedorCards .cardTres .cardImg {
-        width: 25vw; }
-    .contenedorShop .contenedorCards .cardCuatro {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      .contenedorShop .contenedorCards .cardCuatro .cardImg {
-        width: 25vw; }
-    .contenedorShop .contenedorCards .cardCinco {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      .contenedorShop .contenedorCards .cardCinco .cardImg {
-        width: 25vw; }
-    .contenedorShop .contenedorCards .cardSeis {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-      .contenedorShop .contenedorCards .cardSeis .cardImg {
-        width: 25vw; }
-  .contenedorShop .sectionShop {
-    display: none; }
-  .contenedorShop .footerShop {
-    margin-left: 3vw;
-    margin-bottom: 3vh;
-    margin-top: 3vh; }
-    .contenedorShop .footerShop .shopBack {
-      font-size: medium;
+    gap: 3vh; }
+    .contenedorShop .contenedorCards div .card-body .btn {
       text-decoration: none;
-      transition: 300ms; }
-      .contenedorShop .footerShop .shopBack:visited {
-        color: inherit; }
-      .contenedorShop .footerShop .shopBack:active {
-        color: inherit; }
-      .contenedorShop .footerShop .shopBack:link {
-        color: inherit; }
-      .contenedorShop .footerShop .shopBack:hover {
-        font-size: 102%;
-        transition: 300ms; }
-    .contenedorShop .footerShop .mobileShop {
-      display: none; }
+      font-weight: bold; }
+    .contenedorShop .contenedorCards div .card-body .card-text {
+      font-weight: bold; }
+    .contenedorShop .contenedorCards div .card-body .cardTitle {
+      margin-top: 2vh; }
+  .contenedorShop .contenedorCards .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .contenedorShop .contenedorCards .card .cardImg {
+      width: 25vw; }
+  .contenedorShop .contenedorCards .cardDos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .contenedorShop .contenedorCards .cardDos .cardImg {
+      width: 25vw; }
+  .contenedorShop .contenedorCards .cardTres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .contenedorShop .contenedorCards .cardTres .cardImg {
+      width: 25vw; }
+  .contenedorShop .contenedorCards .cardCuatro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .contenedorShop .contenedorCards .cardCuatro .cardImg {
+      width: 25vw; }
+  .contenedorShop .contenedorCards .cardCinco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .contenedorShop .contenedorCards .cardCinco .cardImg {
+      width: 25vw; }
+  .contenedorShop .contenedorCards .cardSeis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .contenedorShop .contenedorCards .cardSeis .cardImg {
+      width: 25vw; }
+
+/* Estilos de Section Shop */
+
+.contenedorShop .sectionShop {
+  display: none; }
+
+.contenedorShop .footerShop {
+  margin-left: 3vw;
+  margin-top: auto;
+  margin-bottom: 2vh; }
+
+/* Estilos de Footer Shop */
+
+  .contenedorShop .footerShop .mobileShop {
+    display: none; }
 
 /* Media Query Tablet */
 @media (max-width: 767px) {
@@ -339,7 +368,10 @@ body {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 5vh 80vh 10vh 5vh;
-    grid-template-areas: "header" "main" "section" "footer"; }
+    grid-template-areas: "header"
+ "main"
+ "section"
+ "footer"; }
     .contenedorShop .headerShop {
       grid-area: header;
       display: flex;
@@ -377,128 +409,71 @@ body {
       grid-area: footer;
       display: flex;
       align-items: center;
-      grid-area: footer;
       margin-left: 5vw;
       margin-right: 5vw;
-      margin-bottom: 3vh;
+      margin-bottom: 2vh;
       justify-content: space-between; }
       .contenedorShop .footerShop .mobileShop {
-        display: block; } }
+        display: block;
+        font-size: 12px; } }
 
-.contenedorFotografia {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 10vh 80vh 10vh;
-  grid-template-areas: "header" "main" "footer"; }
-  .contenedorFotografia .headerFotografia {
-    grid-area: header; }
-    .contenedorFotografia .headerFotografia .tituloFotografia {
-      text-align: center;
-      margin-top: 2vh; }
-  .contenedorFotografia .mainFotografia {
-    grid-area: main;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .contenedorFotografia .mainFotografia .fotosFotografia {
-      display: flex;
-      justify-content: center;
-      gap: 5vw; }
-      .contenedorFotografia .mainFotografia .fotosFotografia .card .card-img-top {
-        width: 35vw; }
-      .contenedorFotografia .mainFotografia .fotosFotografia .cardDos .card-img-top {
-        width: 35vw; }
-  .contenedorFotografia .footerFotografia {
-    grid-area: footer;
-    display: flex;
-    align-items: center; }
-    .contenedorFotografia .footerFotografia .backFotografia {
-      text-align: left;
-      margin-left: 3vw;
-      text-decoration: none;
-      font-weight: bolder; }
+/* Estilos de Header Fotografia */
 
-/* Media Query Tablet */
+.headerFotografia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+  margin-bottom: 2vh; }
+
+/* Estilos de Footer Fotografia */
+
+.footerFotografia {
+  text-align: start;
+  margin-left: 3vw; }
+  .footerFotografia .footerMobile {
+    display: none;
+    font-size: 12px; }
+
 @media (max-width: 767px) {
   body {
     background-color: whitesmoke; } }
 
-/* Media Query Smartphone */
 @media (max-width: 480px) {
-  .contenedorFotografia {
-    height: 100vh;
-    background-color: #c0b2b2;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 10vh 80vh 10vh;
-    grid-template-areas: "header" "main" "footer"; }
-    .contenedorFotografia .headerFotografia {
-      grid-area: header; }
-      .contenedorFotografia .headerFotografia .tituloFotografia {
-        text-align: center;
-        margin-top: 2vh; }
-    .contenedorFotografia .mainFotografia {
-      grid-area: main;
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; }
+    body .headerFotografia {
+      margin-bottom: 18vh; }
+    body .footerFotografia {
       display: flex;
       align-items: center;
-      justify-content: center; }
-      .contenedorFotografia .mainFotografia .fotosFotografia {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 5vw; }
-        .contenedorFotografia .mainFotografia .fotosFotografia .card {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          gap: 3vh; }
-          .contenedorFotografia .mainFotografia .fotosFotografia .card .card-img-top {
-            width: 35vw; }
-        .contenedorFotografia .mainFotografia .fotosFotografia .cardDos {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          gap: 3vh; }
-          .contenedorFotografia .mainFotografia .fotosFotografia .cardDos .card-img-top {
-            width: 35vw; }
-  .footerFotografia {
-    grid-area: footer;
-    display: flex;
-    align-items: center; }
-    .footerFotografia .backFotografia {
-      text-align: left;
-      margin-left: 3vw;
-      text-decoration: none; } }
+      justify-content: space-between;
+      margin-top: auto;
+      margin-left: 5vw;
+      margin-right: 5vw; }
+      body .footerFotografia .footerMobile {
+        display: block; } }
 
-.contenedorContacto {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 30vh 60vh 10vh;
-  grid-template-areas: "header" "main" "footer"; }
-  .contenedorContacto .tituloContacto {
-    grid-area: header;
+
+/* Estilos de Body Contacto */
+
+body {
+  min-height: 100vh; }
+  body .mb-4 {
+    margin-left: 2vh;
+    margin-right: 2vh;
+    min-height: 86vh; }
+
+/* Estilos de Footer Contacto */
+
+  body .footerContacto {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2vh;
-    margin-top: 2vh; }
-  .contenedorContacto .mainContacto {
-    grid-area: main;
-    display: flex;
-    justify-content: center; }
-  .contenedorContacto .footerContacto {
-    grid-area: footer;
-    display: flex;
-    justify-content: left;
-    margin-left: 3vw;
-    align-items: center; }
+    margin-left: 3vw; }
+    body .footerContacto .mobileContacto {
+      display: none;
+      font-size: 12px; }
 
 /* Media Query Contacto Tablet */
 @media (max-width: 767px) {
@@ -508,4 +483,10 @@ body {
 /* Media Query Smartphone */
 @media (max-width: 480px) {
   body {
-    background-color: #c0b2b2; } }
+    background-color: #c0b2b2; }
+    body .footerContacto {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 2vh; }
+      body .footerContacto .mobileContacto {
+        display: block; } }

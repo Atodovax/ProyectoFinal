@@ -6,10 +6,8 @@
         display: flex;
         justify-content: center;
         margin-top: 2vh;
-        font-size: 2vh
+        font-size: 2vh;
     }
-
-/* Estilos de Main Shop */
 
     .contenedorCards {
         div{
@@ -27,7 +25,9 @@
                     .card-text {
                         font-weight: bold;
                     }
-                    
+                        .cardTitle{
+                            margin-top: 2vh;
+                        }
                 }
             
         }
@@ -102,34 +102,18 @@
         
     }
 
-/* Estilos de Section Shop */
 
 .sectionShop {
     display: none;
 }
 
-/* Estilos de Footer Shop */
 
     .footerShop {
         margin-left: 3vw;
-        margin-bottom: 3vh;
-        margin-top: 3vh;
+        margin-top: auto;
+        margin-bottom: 2vh;
         .shopBack{
-            font-size: medium;            text-decoration: none;
-            &:visited{
-                color: inherit;
-            }
-            &:active{
-                color: inherit;
-            }
-            &:link{
-                color: inherit;
-            }
-            transition: 300ms;
-            &:hover{
-                font-size: 102%;
-                transition: 300ms;
-            }
+            @extend .footerBack;
         }
 
         .mobileShop {
@@ -217,14 +201,14 @@
             grid-area: footer;
             display: flex;
             align-items: center;
-            grid-area: footer;
             margin-left: 5vw;
             margin-right: 5vw;
-            margin-bottom: 3vh;
+            margin-bottom: 2vh;
             justify-content:space-between; 
 
             .mobileShop {
                 display: block;
+                font-size: $mobile-size;
             }
         
         }      

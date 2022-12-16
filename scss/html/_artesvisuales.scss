@@ -18,7 +18,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2vh;    
+        font-size: 2vh;
     }
 /* Estilos de main Artes Visuales */
     
@@ -86,20 +86,7 @@
     margin-left: 3vw;
 
     .footerBack {
-        transition: 300ms;
-        &:hover{
-            font-size: 102%;
-            transition: 300ms;
-        }
-        &:active{
-            color: inherit;
-        }
-        &:link{
-            color: inherit;
-        }
-        &:visited{
-            color: inherit;
-        }
+        @extend .footerBack;
     }
     .footerMobile {
         display: none;
@@ -230,6 +217,7 @@
                 
                 .footerMobile {
                     display: block;
+                    font-size: $mobile-size;
                 }  
             }          
     }
